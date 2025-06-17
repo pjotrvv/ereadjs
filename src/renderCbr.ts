@@ -1,4 +1,4 @@
-import Unrar from 'unrar-js';
+import * as Unrar from 'unrar-js';
 
 export async function renderCbr(file: File | Blob, container: HTMLElement) {
   const buffer = new Uint8Array(await file.arrayBuffer());
