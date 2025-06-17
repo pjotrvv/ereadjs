@@ -1,0 +1,24 @@
+{
+  "name": "erenderjs",
+  "version": "0.1.0",
+  "description": "Javsscript library for rendering PDF, CBR and CBZ files in the browser.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  },
+  "author": "pjotrvv <pjotr.vanveen@student.hu.nl/vanveenpjotr@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.1",
+  "dependencies": {
+    "epubjs": "^0.3.93",
+    "jszip": "^3.10.1",
+    "pdfjs-dist": "^5.3.31",
+    "unrar-js": "^0.2.3"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
